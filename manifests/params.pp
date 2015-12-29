@@ -1,10 +1,7 @@
-# Class yum_repo_client::params
+# Class overpass_api::params
 #
 # This class contains every parameter which will be used in this puppet module
-# for setting up the yum_repo_client service
-class yum_repo_client::params {
-  $pkg_name     = 'yum-repo-client'
-  $host         = 'localhost'
-  $port         = '8000'
-  $context      = undef
+# for setting up the overpass_api service
+class overpass_api::params {
+  $pkg_name     = 'overpass-api'
 }

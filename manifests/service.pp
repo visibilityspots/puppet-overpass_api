@@ -3,7 +3,7 @@
 # Class which configures the overpass api daemon
 class overpass_api::service {
   service { 'overpass-api':
-    ensure  => 'running',
-    enabled => true
+    ensure => 'running',
+    enable => true
   }
 }

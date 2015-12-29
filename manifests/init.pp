@@ -3,9 +3,6 @@
 # Initialization class for the overpass_api service
 class overpass_api (
   $pkg_name     = $overpass_api::params::pkg_name,
-  $host         = $overpass_api::params::host,
-  $port         = $overpass_api::params::port,
-  $context      = $overpass_api::params::context,
 ) inherits overpass_api::params {
 
   include overpass_api::install

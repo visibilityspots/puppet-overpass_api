@@ -1,0 +1,11 @@
+[Unit]
+Description=Overpass API dispatcher daemon
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/osm3s/bin/dispatcher --osm-base --db-dir=/var/lib/osm3s/data/db
+ExecStop=/usr/local/osm3s/bin/dispatcher --terminate
+
+[Install]
+WantedBy=multi-user.target
