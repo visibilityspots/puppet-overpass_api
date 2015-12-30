@@ -3,5 +3,7 @@
 # This class contains every parameter which will be used in this puppet module
 # for setting up the overpass_api service
 class overpass_api::params {
-  $pkg_name     = 'overpass-api'
+  $pkg_name               = 'overpass-api'
+  $initialize             = false
+  $osm_upstream_data_file = undef
 }
