@@ -10,10 +10,10 @@ class overpass_api (
   include overpass_api::install
   include overpass_api::config
   include overpass_api::service
-  include overpass_api::initialize
+  #  include overpass_api::initialize
 
   Class['overpass_api::install'] ->
   Class['overpass_api::config'] ->
-  Class['overpass_api::service'] ->
-  Class['overpass_api::initialize']
+  Class['overpass_api::service']
+  #Class['overpass_api::initialize']
 }
