@@ -15,5 +15,5 @@ class overpass_api (
   Class['overpass_api::install'] ->
   Class['overpass_api::config'] ->
   Class['overpass_api::service']
-  #Class['overpass_api::initialize']
+  Class['overpass_api::initialize']
 }
