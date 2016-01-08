@@ -6,4 +6,12 @@ class overpass_api::service {
     ensure => 'running',
     enable => true
   }
+  service { 'dispatcher-areas':
+    ensure => 'running',
+    enable => true
+  }
+  service { 'osm3s-query':
+    ensure => 'running',
+    enable => true
+  }
 }
