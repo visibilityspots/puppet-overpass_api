@@ -1,0 +1,10 @@
+[Unit]
+Description=Overpass Rules loop
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/osm3s/bin/rules_loop.sh /var/lib/osm3s/data/db
+
+[Install]
+WantedBy=multi-user.target
